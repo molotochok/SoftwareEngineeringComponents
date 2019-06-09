@@ -1,0 +1,2 @@
+ALTER TABLE poets ADD CONSTRAINT email_regexp CHECK (email ~ $$[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$$);
+ALTER TABLE poets ADD CONSTRAINT phone_regexp CHECK (phone ~ $$\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$$);
